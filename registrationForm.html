@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        background-color: blueviolet;
+        margin: auto;
+        padding: 10px;
+      }
+      form {
+        border: 2px solid black;
+        padding: 10px;
+        margin: 10px auto;
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 3px 3px 3px black;
+        width: fit-content;
+      }
+      input {
+        padding: 5px;
+        margin: 5px;
+      }
+      button {
+        width: 100%;
+        padding: 10px;
+        margin: 5px auto;
+        color: white;
+        background: linear-gradient(45deg, blue, black);
+      }
+      button:hover {
+        background: linear-gradient(45deg, black, blue);
+      }
+      label {
+        font-weight: bold;
+      }
+      h1 {
+        color: brown;
+        font-family: 'Times New Roman', Times, serif;
+        border-bottom: 3px solid grey;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="/register" method="post">
+      <h1>Registration Form</h1>
+      <p><input type="text" placeholder="Enter Username" name="username" /></p>
+      <p><input type="email" placeholder="Enter Email" name="email" /></p>
+      <p>
+        <input type="password" placeholder="Enter password" name="password" />
+      </p>
+      <p>
+        <label>Choose Date Of Birth:</label
+        ><input type="date" placeholder="Choose dob" name="dob" />
+      </p>
+      <p><input type="text" placeholder="Enter City" name="city" /></p>
+      <p><input type="text" placeholder="Enter Country" name="country" /></p>
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>
